@@ -47,6 +47,8 @@ let weekDateRef = [];
 today();
 checkMemory();
 messageBoxReset();
+taskDateElement.value = '';
+taskElement.value = '';
 
 /*********************/
 
