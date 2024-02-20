@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Calendar
+    </title>
+    <link rel="stylesheet" href="Style/General.css">
+    <link rel="stylesheet" href="Style/Calendar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="calendar">
+      <div class="main">
+        <div class="main-title">
+          Weekly Calendar
+        </div>
+        <div class="main-calendar">
+          <div class="main-calendar-title">
+            <div class="sundayTitle">
+              <div class="sundayTitle-word">
+                Sunday
+              </div>
+              <div class="sundayTitle-num">
+              </div>
+            </div>
+            <div class="mondayTitle">
+              <div class="mondayTitle-word">
+                Monday
+              </div>
+              <div class="mondayTitle-num">
+              </div>
+            </div>
+            <div class="tuesdayTitle">
+              <div class="tuesdayTitle-word">
+                Tuesday
+              </div>
+              <div class="tuesdayTitle-num">
+              </div>
+            </div>
+            <div class="wednesdayTitle">
+              <div class="wednesdayTitle-word">
+                Wednesday
+              </div>
+              <div class="wednesdayTitle-num">
+              </div>
+            </div>
+            <div class="thursdayTitle">
+              <div class="thursdayTitle-word">
+                Thursday
+              </div>
+              <div class="thursdayTitle-num">
+              </div>
+            </div>
+            <div class="fridayTitle">
+              <div class="fridayTitle-word">
+                Friday
+              </div>
+              <div class="fridayTitle-num">
+              </div>
+            </div>
+            <div class="saturdayTitle">
+              <div class="saturdayTitle-word">
+                Saturday
+              </div>
+              <div class="saturdayTitle-num">
+              </div>
+            </div>
+          </div>
+          <div class="main-calendar-events">
+            <div class="sunday">
+            </div>
+            <div class="monday">
+            </div>
+            <div class="tuesday">
+            </div>
+            <div class="wednesday">
+            </div>
+            <div class="thursday">
+            </div>
+            <div class="friday">
+            </div>
+            <div class="saturday">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="userInput">
+        <div class="userInput-title">
+          <div class="userInput-title-resetButton">
+            <button onclick="
+                resetCalendar();
+              " class="js-resetCalendar resetCalendarButton">
+              Reset Calendar
+            </button>
+          </div>
+          <div class="userInput-title-removeAllTaskButton">
+            <button class="js-removeAllTask removeAllTaskButton" onclick="initiateRemoveAllTasks();">
+              Delete All Tasks
+            </button>
+          </div>
+        </div>
+        <div class="userInput-textBox">
+          <input type="date" class="js-taskDate taskDate">
+          <input placeholder="Type your tasks here" class="js-task taskTextBox">
+          <button onclick="
+            addTask();
+          " class="addTask-button">
+            Add
+          </button>
+        </div>
+        <div class="messageDisplay">
+          <div class="messageDisplay-text">
+          </div>
+          <div class="messageDisplay-button">
+            <div class="messageDisplay-button-left">
+            </div>
+            <div class="messageDisplay-button-right">
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          Designed by: Z. C. M
+        </div>
+      </div>
+    </div>
+    <script src="Script/Calendar.js">
+    </script>
+  </body>
+</html>

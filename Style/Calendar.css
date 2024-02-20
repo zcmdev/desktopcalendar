@@ -1,0 +1,268 @@
+/*Calendar Layout*/
+
+.calendar {
+  display: flex;
+}
+
+.main {
+  flex: 5;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.main-title {
+  background-color: #DFE6DA;
+  height: 150px;
+  font-size: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-calendar {
+  flex: 10;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-calendar-title {
+  height: 150px;
+  background-color: #D3D0C9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+  margin-bottom: 5px;
+}
+
+.sundayTitle, .tuesdayTitle, .thursdayTitle, .saturdayTitle, .mondayTitle, .wednesdayTitle, .fridayTitle {
+  flex: 1;
+  background-color: #D3D0C9;
+  height: 150px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  font-size: 30px;
+  color: white;
+  flex-direction: column;
+}
+
+.sundayTitle-word, .mondayTitle-word, .tuesdayTitle-word, .wednesdayTitle-word, .thursdayTitle-word, .fridayTitle-word, .saturdayTitle-word {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.sundayTitle-num, .mondayTitle-num, .tuesdayTitle-num, .wednesdayTitle-num, .thursdayTitle-num, .fridayTitle-num, .saturdayTitle-num {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.footer {
+  font-size: 20px;
+  font-family: Ms Madi, Arial;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#AAAAAA;
+}
+
+/*********************/
+
+/*Display Task Section*/
+
+.main-calendar-events {
+  background-color: #F4F2F0;
+  margin-top: 2px;
+  display: flex;
+  column-gap: 5px;
+}
+
+.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday {
+  flex: 1;
+  border: 1px solid white;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*********************/
+
+/*Add Task Section*/
+
+.userInput {
+  flex: 1;
+  background-color: #E7E5D9;
+  display: flex;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.userInput-title {
+  height: 150px;
+  background-color: #E7E5D9;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.resetCalendarButton, .removeAllTaskButton {
+  font-family: Roboto, Arial;
+  font-weight: 300;
+  font-size: 25px;
+  padding: 10px 10px;
+  color: #AAAAAA;
+  border: 2px solid #AAAAAA;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.removeAllTaskButton {
+  background-color: #FFCCCB;
+  color: white;
+  border: 1px solid white;
+}
+
+.userInput-textBox {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid white;
+}
+
+.taskDate {
+  font-size: 25px;
+  font-family: Roboto, Arial;
+  font-weight: 300;
+  background-color: antiquewhite;
+  border: 2px solid white;
+  color: #AAAAAA;
+}
+
+.taskTextBox {
+  font-size: 20px;
+  font-family: Roboto, Arial;
+  font-weight: 300;
+  height: 50px;
+  border: 2px solid #AAAAAA;
+}
+
+.addTask-button {
+  font-family: Roboto, Arial;
+  font-weight: 300;
+  font-size: 18px;
+  border: 1px solid white;
+  background-color: #AAAAAA;
+  color: white;
+  cursor: pointer;
+}
+
+.taskBox {
+  width: 150px;
+  background-color: aliceblue;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3px;
+}
+
+.taskBox-text {
+  flex: 5;
+  background-color: aliceblue;
+  height: 100px;
+  overflow: scroll;
+}
+
+.taskBox-button {
+  flex: 1;
+  background-color: aliceblue;
+}
+
+.deleteTaskButton {
+  background-color: lavenderblush;
+  font-family: Roboto, Arial;
+  border: 1px solid #AAAAAA;
+  color: #AAAAAA;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 3px;
+}
+
+/*********************/
+
+/*Message Box Section*/
+
+.messageDisplay {
+  margin-top: 30px;
+  height: 300px;
+  background-color: white;
+  border-radius: 5px;
+  color: #AAAAAA;
+  display: flex;
+  flex-direction: column;
+}
+
+.messageDisplay-text {
+  flex: 5;
+  color: #242526;
+}
+
+.messageDisplay-button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resetConfirmButton, .resetCancelButton, .removeTaskConfirmButton, .removeTaskCancelButton {
+  font-family: Roboto, Arial;
+  font-weight: 300;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  background-color: #DFE6DA;
+  border: none;
+  cursor: pointer;
+  color: #242526;
+  border-radius: 3px;
+}
+
+.resetCancelButton, .removeTaskCancelButton {
+  background-color: #FFCCCB;
+}
+
+.messageDisplay-button-left, .messageDisplay-button-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.messageDisplay-text {
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/*********************/
