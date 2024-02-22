@@ -14,7 +14,7 @@
 }
 
 .main-title {
-  background-color: #DFE6DA;
+  background-color: #6B705C;
   height: 150px;
   font-size: 50px;
   color: white;
@@ -42,7 +42,7 @@
 
 .sundayTitle, .tuesdayTitle, .thursdayTitle, .saturdayTitle, .mondayTitle, .wednesdayTitle, .fridayTitle {
   flex: 1;
-  background-color: #D3D0C9;
+  background-color: #404565;
   height: 150px;
   border: 2px solid white;
   display: flex;
@@ -84,7 +84,7 @@
 /*Display Task Section*/
 
 .main-calendar-events {
-  background-color: #F4F2F0;
+  background-color: #D3D0C9;
   margin-top: 2px;
   display: flex;
   column-gap: 5px;
